@@ -1,0 +1,10 @@
+TEST_DETAILS  :=  CheckCount
+TEST_CASE_CONTENT_1:= checkcount = 4
+
+SRC_DIR = ../Driver/$(MODULE)/src
+SRC_DIR += ../Test/Test_$(MODULE)/$(TEST)/TEST_SUITE/source
+SRC_DIR += ../Test/Test_$(MODULE)/$(TEST)/TEST_CASE/source
+
+INC_DIR = ../Driver/$(MODULE)/inc
+INC_DIR += ../Test/Test_$(MODULE)/$(TEST)/TEST_SUITE/include
+INC_DIR += ../Test/Test_$(MODULE)/$(TEST)/TEST_CASE/include

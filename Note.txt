@@ -1,0 +1,52 @@
+-I./... : include file *.h
+
+gcc -E *.c -o *.i : *.c -> *.i
+gcc -S *.i -o *.S : *.i -> *.S
+gcc -c *.S -o *.o : *.S -> *.o
+gcc -o *.exe  *.o : *.o -> *.exe
+
+
+Linker file
+R	: Read-only sections
+W	: Read and write sections
+X	: Sections containing executable code.
+A	: Allocated sections
+I	: Initialized sections
+L	: Same as 'I'
+!	: Invert the sense of any of the following attributes.
+
+
+.text:
+{
+
+}> (vma) AT> (lma)
+
+Copy lma to vma
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
